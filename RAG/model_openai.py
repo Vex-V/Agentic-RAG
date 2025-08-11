@@ -1,7 +1,7 @@
 import openai
 
 
-client = openai.AsyncOpenAI(api_key="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")
+client = openai.AsyncOpenAI(api_key="")
 
 async def async_ask_openai(context: str, question: str) -> str:
 
@@ -40,5 +40,6 @@ Question:
     except Exception as e:
         print(f"An error occurred for question '{question}': {e}")
        
+
 
         return "Error processing request."
